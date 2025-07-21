@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8" />
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Gacha Builds</title>
+    {% endif %}
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+
+    <!--Navigation-->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <nav class="navleft">
+                        <a href="/"><h3>Home</h3></a>
+                        <a href="/"><h3>HSR</h3></a>
+                        <a href="/"><h3>Wuwa</h3></a>
+                        <a href="/"><h3>Genshin</h3></a>
+                        <a href="/"><h3>ZZZ</h3></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid no-padding-container">
+        {% block body %} {% endblock %}
+    </div>
+</body>
+</html>
