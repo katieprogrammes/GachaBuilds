@@ -1,11 +1,21 @@
+# app/__init__.py
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
+db = SQLAlchemy()
+migrate = Migrate()
 
-app = Flask(__name__)
+def create_app():
+    app = Flask(__name__)
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///characters.db'
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-db = SQLAlchemy(app)
-migrate = Migrate(app, db)
+    db.init_app(app)
+    migrate.init_app(app, db)
 
-from app import routes
+    from app.models import Character  # Make sure models are imported inside create_app
+    from app.routes import bp as routes_bp
+    app.register_blueprint(routes_bp)
+
+    return app
