@@ -22,3 +22,19 @@ header {
     font-weight: 400;
     color: #B8C6F4;
 }
+
+.charcard {
+    display: flex;
+    justify-content: center;
+    margin: 40px 10px;
+}
+.charcard img {
+    object-fit: cover;
+    background-size: 100% 100%;
+    height: 250px;
+    width: 250px;
+}
+.cardtext {
+    background-color: black;
+    color: white;
+}
