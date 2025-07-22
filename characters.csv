@@ -1,67 +1,67 @@
-﻿Name,Game
-Acheron,HSR
-Aglaea,HSR
-Anaxa,HSR
-Archer,HSR
-Argenti,HSR
-Arlan,HSR
-Asta,HSR
-Aventurine,HSR
-Bailu,HSR
-Black Swan,HSR
-Blade,HSR
-Boothill,HSR
-Bronya,HSR
-Castorice,HSR
-Cipher,HSR
-Clara,HSR
-Dan Heng,HSR
-DHIL,HSR
-Dr Ratio,HSR
-Feixiao,HSR
-Firefly,HSR
-Fu Xuan,HSR
-Fugue,HSR
-Gallagher,HSR
-Gepard,HSR
-Guinaifen,HSR
-Hanya,HSR
-Herta,HSR
-Himeko,HSR
-Hook,HSR
-Huohuo,HSR
-Hyacine,HSR
-Jade,HSR
-Jiaoqiu,HSR
-Jing Yuan,HSR
-Jingliu,HSR
-Kafka,HSR
-Lingsha,HSR
-Luka,HSR
-Luocha,HSR
-Lynx,HSR
-March Ice,HSR
-March Imaginary,HSR
-Moze,HSR
-Mydei,HSR
-Natasha,HSR
-Pela,HSR
-Phainon,HSR
-Qingque,HSR
-Robin,HSR
-Ruan Mei,HSR
-Sampo,HSR
-Seele,HSR
-Serval,HSR
-Sunday,HSR
-Sushang,HSR
-Tingyun,HSR
-Topaz,HSR
-TB Phys,HSR
-TB Fire,HSR
-TB Imag,HSR
-TB Ice,HSR
-Welt,HSR
-Xueyi,HSR
-Yanqing,HSR
-Yukong,HSR
+﻿Name,Slug,Game
+Acheron,acheron,HSR
+Aglaea,aglaea,HSR
+Anaxa,anaxa,HSR
+Archer,archer,HSR
+Argenti,argenti,HSR
+Arlan,arlan,HSR
+Asta,asta,HSR
+Aventurine,aventurine,HSR
+Bailu,bailu,HSR
+Black Swan,blackswan,HSR
+Blade,blade,HSR
+Boothill,boothill,HSR
+Bronya,bronya,HSR
+Castorice,castorice,HSR
+Cipher,cipher,HSR
+Clara,clara,HSR
+Dan Heng,danheng,HSR
+DHIL,dhil,HSR
+Dr Ratio,drratio,HSR
+Feixiao,feixiao,HSR
+Firefly,firefly,HSR
+Fu Xuan,fuxuan,HSR
+Fugue,fugue,HSR
+Gallagher,gallagher,HSR
+Gepard,gepard,HSR
+Guinaifen,guinaifen,HSR
+Hanya,hanya,HSR
+Herta,herta,HSR
+Himeko,himeko,HSR
+Hook,hook,HSR
+Huohuo,huohuo,HSR
+Hyacine,hyacine,HSR
+Jade,jade,HSR
+Jiaoqiu,jiaoqiu,HSR
+Jing Yuan,jingyuan,HSR
+Jingliu,jingliu,HSR
+Kafka,kafka,HSR
+Lingsha,lingsha,HSR
+Luka,luka,HSR
+Luocha,luocha,HSR
+Lynx,lynx,HSR
+March Ice,marchice,HSR
+March Imaginary,marchimaginary,HSR
+Moze,moze,HSR
+Mydei,mydei,HSR
+Natasha,natasha,HSR
+Pela,pela,HSR
+Phainon,phainon,HSR
+Qingque,qingque,HSR
+Robin,robin,HSR
+Ruan Mei,ruanmei,HSR
+Sampo,sampo,HSR
+Seele,seele,HSR
+Serval,serval,HSR
+Sunday,Sunday,HSR
+Sushang,sushang,HSR
+Tingyun,tingyun,HSR
+Topaz,topaz,HSR
+TB Phys,tbphys,HSR
+TB Fire,tbfire,HSR
+TB Imag,tbimag,HSR
+TB Ice,tbice,HSR
+Welt,welt,HSR
+Xueyi,xueyi,HSR
+Yanqing,yanqing,HSR
+Yukong,yukong,HSR

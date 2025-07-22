@@ -12,15 +12,16 @@ def main(file_path="characters.csv"):
 
         with open(file_path, newline="", encoding="utf-8-sig") as f:
             reader = csv.reader(f)
-            for name, game in reader:
+            for name, slug, game in reader:
                 csv_character_names.add(name)
 
                 char = Character.query.filter_by(name=name).first()
                 if char:
+                    char.slug = slug
                     char.game = game
                     print(f"Updated character: {name}")
                 else:
-                    char = Character(name=name, game=game)
+                    char = Character(name=name, slug=slug, game=game)
                     db.session.add(char)
                     print(f"Added character: {name}")
 

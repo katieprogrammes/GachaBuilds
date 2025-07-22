@@ -12,5 +12,10 @@ def home():
 
 @bp.route('/hsr', methods=["GET"])
 def hsr():
-    hsrchar_names = [char.name for char in Character.query.filter_by(game="HSR").all()]
-    return render_template("hsr.html", names=hsrchar_names)
+    hsrchars = Character.query.filter_by(game="HSR").all()
+    return render_template("hsr.html", hsrchars=hsrchars)
+
+@bp.route("/character/<slug>")
+def character_detail(slug):
+    character = Character.query.filter_by(slug=slug).first_or_404()
+    return render_template("hsrbuild.html", character=character, title=character.name)

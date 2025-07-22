@@ -3,17 +3,17 @@
 {% block body %}
 <h1>Characters</h1>
 <div class="row">
-{% for name in names %}
+{% for hsrchar in hsrchars %}
     <div class="col-6 col-sm-6 col-md-4 col-lg-3">
         <div class="charcard">
             <!--Character Image-->
-            <a href="/" class="charlink">
+            <a href="{{ url_for('routes.character_detail', slug=hsrchar.slug) }}" class="charlink">
                 <div class="charimg">
-                    <img src="{{ url_for('static', filename='images/charcards/' + name + '.png') }}">
+                    <img src="{{ url_for('static', filename='images/HSR/charcards/' + hsrchar.name + '.png') }}">
                 </div>
                 <!--Character Information-->
                 <div class="cardtext">
-                    <h3>{{name}}</h3>
+                    <h3>{{ hsrchar.name }}</h3>
                 </div>
             </a>
         </div>
