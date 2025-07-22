@@ -4,7 +4,11 @@
 <h1 class="charaname">{{character.name}}</h1>
 <div row="buildimg">
     <h3>Fort of Fans</h3>
-    <img src="{{ url_for('static', filename='images/HSR/Characters/' + character.slug + '/fort.jpg') }}", width="100%">
+    {% if fort_image %}
+  <img src="{{ url_for('static', filename=fort_image) }}" width="100%">
+    {% else %}
+    <p>No Fort image found.</p>
+    {% endif %}
 </div>
 <br>
 <div row="buildimg">

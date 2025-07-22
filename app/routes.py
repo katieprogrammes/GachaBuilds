@@ -1,4 +1,5 @@
-from flask import render_template, Blueprint, url_for
+import os
+from flask import render_template, Blueprint, url_for, current_app
 from app.models import Character
 
 #Routes
@@ -18,4 +19,12 @@ def hsr():
 @bp.route("/character/<slug>")
 def character_detail(slug):
     character = Character.query.filter_by(slug=slug).first_or_404()
-    return render_template("hsrbuild.html", character=character, title=character.name)
+     # Look for fort image with .jpg or .png
+    base_path = os.path.join(current_app.static_folder, 'images', 'HSR', 'Characters', character.slug)
+    fort_filename = None
+    for ext in ['.jpg', '.png']:
+        potential_path = os.path.join(base_path, f"fort{ext}")
+        if os.path.exists(potential_path):
+            fort_filename = f"images/HSR/Characters/{character.slug}/fort{ext}"
+            break
+    return render_template("hsrbuild.html", character=character, title=character.name, fort_image=fort_filename)
