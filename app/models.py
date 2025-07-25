@@ -12,3 +12,24 @@ class Character(db.Model):
 
     def __repr__(self):
         return f"Character('{self.id}', '{self.name}','{self.game}')"
+    
+class HSRGame8(db.Model):
+    id: so.Mapped[int] = so.mapped_column(primary_key=True)
+    name: so.Mapped[str] = so.mapped_column(sa.String(64), nullable=False)
+    slug: so.Mapped[Optional[str]] = so.mapped_column(sa.String(64), unique=True, nullable=True)
+    lightcone0: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    lightcone1: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    lightcone2: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    lightcone3: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    relic0: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    relic1: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    relic2: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    ornament0: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    ornament1: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    ornament2: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    bodystat: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    feetstat: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    spherestat: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    ropestat: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    substats: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    

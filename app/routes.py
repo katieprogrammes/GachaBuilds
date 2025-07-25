@@ -1,6 +1,6 @@
 import os
 from flask import render_template, Blueprint, url_for, current_app
-from app.models import Character
+from app.models import Character, HSRGame8
 
 #Routes
 bp = Blueprint("routes", __name__)
@@ -27,4 +27,5 @@ def character_detail(slug):
         if os.path.exists(potential_path):
             fort_filename = f"images/HSR/Characters/{character.slug}/fort{ext}"
             break
+    game8 = HSRGame8.query.filter_by(slug=slug).first_or_404()
     return render_template("hsrbuild.html", character=character, title=character.name, fort_image=fort_filename)
