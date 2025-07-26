@@ -2,8 +2,8 @@
 
 {% block body %}
 <h1 class="charaname">{{character.name}}</h1>
-<div row="buildimg">
-    <h3>Fort of Fans</h3>
+<div class="buildimg">
+    <h2>Fort of Fans</h2>
     {% if fort_image %}
   <img src="{{ url_for('static', filename=fort_image) }}" width="100%">
     {% else %}
@@ -11,8 +11,101 @@
     {% endif %}
 </div>
 <br>
-<div row="buildimg">
-    <h3>Sipsip</h3>
+<div class="buildimg">
+    <h2>Sipsip</h2>
     <img src="{{ url_for('static', filename='images/HSR/Characters/' + character.slug + '/sipsip.png') }}", width="100%">
+</div>
+<br>
+<div class="row game8data">
+  <h2>Game8</h2>
+  <div class="row">
+    <h3>Lightcones</h3>
+    <table class="lcdata">
+      <thead>
+        <tr>
+          <th>Best Option</th>
+          <th>Second Best</th>
+          <th>Third Best</th>
+          <th>Fourth Best</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{game8.lightcone0}}</td>
+          <td>{{game8.lightcone1}}</td>
+          <td>{{game8.lightcone2}}</td>
+          <td>{{game8.lightcone3}}</td>
+        </tr>
+      </tbody>
+
+
+    </table>
+  </div>
+  <br>
+  <div class="row relicblock">
+    <h3>Relics</h3>
+    <table class="relicdata">
+      <thead>
+        <tr>
+          <th>Best Option</th>
+          <th>Second Best</th>
+          <th>Third Best</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{game8.relic0}}</td>
+          <td>{{game8.relic1}}</td>
+          <td>{{game8.relic2}}</td>
+        </tr>
+      </tbody>
+
+
+    </table>
+  </div>
+  <div class="row ornamentblock">
+    <h3>Ornaments</h3>
+    <table class="ornamentdata">
+      <thead>
+        <tr>
+          <th>Best Option</th>
+          <th>Second Best</th>
+          <th>Third Best</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{game8.ornament0}}</td>
+          <td>{{game8.ornament1}}</td>
+          <td>{{game8.ornament2}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <h3>Relic Stats</h3>
+    <table class="relicstats">
+      <thead>
+        <tr>
+          <td>Body</td>
+          <td>Feet</td>
+          <td>Sphere</td>
+          <td>Rope</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{game8.bodystat}}</td>
+          <td>{{game8.feetstat}}</td>
+          <td>{{game8.spherestat}}</td>
+          <td>{{game8.ropestat}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <h2>Substats</h2>
+    <h3>{{game8.substats}}</h3>
+  </div>
 </div>
 {% endblock %}

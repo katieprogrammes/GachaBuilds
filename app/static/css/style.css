@@ -2,7 +2,8 @@ html {
     height: 100%;
 }
 body {
-
+    background-color: rgb(53, 50, 50);
+    color: white;
     margin-top: 5rem;
     height: 100%;
 }
@@ -41,4 +42,45 @@ header {
 /*Build Page*/
 .charaname {
     text-align: center;
+}
+.game8data {
+    display: flex;
+    justify-content: center;
+}
+.game8data h2,
+.game8data h3 {
+    padding: 10px 5px;
+}
+.game8data table {
+    padding: 10px 0;
+}
+.lcdata {
+    width: 100%;
+}
+.lcdata thead {
+    background-color: #282566;
+    font-size: 25px;
+}
+.lcdata td {
+    font-size: 18px;
+    
+}
+.relicblock,
+.ornamentblock {
+    padding-top: 40px;
+}
+.ornamentblock {
+    padding-bottom: 40px;
+}
+.relicdata thead {
+    background-color: #253666;
+    font-size: 25px;
+}
+.relicdata td,
+.ornamentdata td {
+    font-size: 20px;
+}
+.ornamentdata thead {
+    background-color: #254666;
+    font-size: 25px;
 }

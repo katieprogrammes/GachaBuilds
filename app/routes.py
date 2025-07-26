@@ -28,4 +28,4 @@ def character_detail(slug):
             fort_filename = f"images/HSR/Characters/{character.slug}/fort{ext}"
             break
     game8 = HSRGame8.query.filter_by(slug=slug).first_or_404()
-    return render_template("hsrbuild.html", character=character, title=character.name, fort_image=fort_filename)
+    return render_template("hsrbuild.html", character=character, title=character.name, fort_image=fort_filename, game8=game8)
