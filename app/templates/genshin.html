@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h1>Characters</h1>
+<div class="row">
+{% for genshinchar in genshinchars %}
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="charcard">
+            <!--Character Image-->
+            <a href="/" class="charlink">
+                <div class="charimg">
+                    <img src="{{ url_for('static', filename='images/Genshin/charcards/' + genshinchar.name + '.png') }}">
+                </div>
+                <!--Character Information-->
+                <div class="cardtext">
+                    <h3>{{ genshinchar.name }}</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

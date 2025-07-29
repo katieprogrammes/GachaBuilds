@@ -31,7 +31,11 @@
       </thead>
       <tbody>
         <tr>
+          {% if game8.lightcone0 == "Signature" %}
+          <td style="color:red;">{{game8.lightcone0}}</td>
+          {%else%}
           <td>{{game8.lightcone0}}</td>
+          {%endif%}
           <td>{{game8.lightcone1}}</td>
           <td>{{game8.lightcone2}}</td>
           <td>{{game8.lightcone3}}</td>
@@ -82,15 +86,15 @@
       </tbody>
     </table>
   </div>
-  <div class="row">
+  <div class="row statblock">
     <h3>Relic Stats</h3>
     <table class="relicstats">
       <thead>
         <tr>
-          <td>Body</td>
-          <td>Feet</td>
-          <td>Sphere</td>
-          <td>Rope</td>
+          <th>Body</th>
+          <th>Feet</th>
+          <th>Sphere</th>
+          <th>Rope</th>
         </tr>
       </thead>
       <tbody>
@@ -103,7 +107,7 @@
       </tbody>
     </table>
   </div>
-  <div class="row">
+  <div class="row substats">
     <h2>Substats</h2>
     <h3>{{game8.substats}}</h3>
   </div>

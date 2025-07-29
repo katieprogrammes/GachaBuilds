@@ -16,7 +16,12 @@ def hsr():
     hsrchars = Character.query.filter_by(game="HSR").all()
     return render_template("hsr.html", hsrchars=hsrchars)
 
-@bp.route("/character/<slug>")
+@bp.route('/genshin', methods=["GET"])
+def genshin():
+    genshinchars = Character.query.filter_by(game="Genshin").all()
+    return render_template("hsr.html", genshinchars=genshinchars)
+
+@bp.route("/hsr/character/<slug>")
 def character_detail(slug):
     character = Character.query.filter_by(slug=slug).first_or_404()
      # Look for fort image with .jpg or .png

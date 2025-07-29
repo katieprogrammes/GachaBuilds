@@ -69,7 +69,8 @@ header {
 .ornamentblock {
     padding-top: 40px;
 }
-.ornamentblock {
+.ornamentblock,
+.statblock {
     padding-bottom: 40px;
 }
 .relicdata thead {
@@ -77,10 +78,18 @@ header {
     font-size: 25px;
 }
 .relicdata td,
+.relicstats td,
 .ornamentdata td {
     font-size: 20px;
 }
 .ornamentdata thead {
     background-color: #254666;
     font-size: 25px;
+}
+.relicstats thead {
+    background-color: #256266;
+    font-size: 25px;
+}
+.substats {
+    text-align: center;
 }
