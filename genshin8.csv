@@ -8,11 +8,7 @@ Ayato,ayato,Haran Geppaku Futsu,Mistsplitter Reforged,Primordial Jade Cutter,Ame
 Baizhu,baizhu,Jadefalls Splendor,Prototype Amber,Favonius Codex,Prototype Amber,Deepwood Memories,Ocean Hued Clam,Songs of Days Past,Instructor,Elemental Mastery/Energy Recharge,Elemental Mastery,Elemental Mastery,"Elemental Mastery, Energy Recharge, HP%, HP"
 Barbara,barbara,Thrilling Tales of Dragon Slayers,Everlasting Moonglow,Prototype Amber,Prototype Amber,Ocean Hued Clam,Maiden Beloved,Gilded Dreams,Instructor,Elemental Mastery ,Elemental Mastery ,Elemental Mastery ,"Elemental Mastery, HP%"
 Beidou,beidou,The Unforged,Wolfs Gravestone,Serpent Spine,Protoype Archaic,Emblem of Severed Fate,Gladiators Finale + Thundering Fury,Emblem of Severed Fate + Thundering Fury,The Exile,ATK%/Energy Recharge,Type DMG Bonus,Crit Rate/DMG,"ATK%, Energy Recharge, Crit Rate, Crit DMG"
-Bennett,bennett,(multibuild),,,,,,,,,,,
 Candace,candace,Staff of Homa,Favonius Lance,Rightful Reward,The Catch,Emblem of Severed Fate,Noblesse Oblige,Heart of Depth,The Exile,Energy Recharge/HP%,HP%,HP%/Crit Rate,"Energy Recharge, Crit Rate, Crit DMG, Elemental Mastery, ATK%"
-Charlotte,charlotte,(multibuild),,,,,,,,,,,
-Chasca,chasca,(multibuild),,,,,,,,,,,
-Chevreuse,chevreuse,(multibuild),,,,,,,,,,,
 Childe,childe,Polar Star,Thundering Pulse,The Viridescent Hunt,Hamayumi,Nymphs Dream,Heart of Depth,Gladiators Finale + Heart of Depth,Martial Artist,ATK%,Type DMG Bonus,Crit Rate/DMG,"ATK%, Crit Rate, Crit DMG, Elemental Mastery"
 Chiori,chiori,Uraku Misugiri,Primordial Jade Cutter,Cinnabar Spindle,Flute of Ezpitzal,Golden Troupe,Husk of Opulent Dreams,Husk of Opulent Dreams + Golden Troupe,Defenders Will,DEF%/ATK%,Type DMG Bonus,Crit Rate/DMG,"Crit Rate, Crit DMG, DEF%, ATK%"
 Chongyun,chongyun,Wolfs Gravestone,Beacon of the Reed Sea,Serpent Spine,Tidal Shadow,Emblem of Severed Fate,Noblesse Oblige,Blizzard Strayer + Gladiators Finale,The Exile,Energy Recharge/ATK%,Type DMG Bonus,Crit Rate/DMG,"Energy Recharge, Crit Rate, Crit DMG, ATK%"
@@ -26,13 +22,11 @@ Diluc,diluc,Wolfs Gravestone,Serpent Spine,Redhorn Stonethresher,Protoype Archai
 Diona,diona,Elergy for the End,Sacrificial Bow,Favonius Warbow,Recurve Bow,Noblesse Oblige,Tenacity of the Millelith + Emblem of Severed Fate,Tenacity of the Millelith + Maiden Beloved,Instructor,HP%,HP%,HP%/Healing Bonus/Crit Rate,"Energy Recharge, Healing Bonus, Crit Rate"
 Dori,dori,Favonius Greatsword,Wolfs Gravestone,The Bell,Forest Regalia,Noblesse Oblige,Tenacity of the Millelith + Emblem of Severed Fate,Ocean Hued Clam,The Exile,Energy Recharge/HP%,HP%,HP%/Healing Bonus,"Energy Recharge, HP%, ATK%, Crit Rate"
 Emilie,emilie,Lumidouce Elegy,Calamity Queller,Staff of the Scarlet Sands,Missive Windspear,Unfinished Reverie,Deepwood Memories,Golden Troupe,Gambler,ATK%,Type DMG Bonus,Crit Rate/DMG,"ATK%, Crit Rate, Crit DMG, Energy Recharge"
-Escoffier,escoffier,(multibuild),,,,,,,,,,,
 Eula,eula,Song of Broken Pines,Beacon of the Reed Sea,Serpent Spine,Protoype Archaic,Pale Flame,Pale Flame + Bloodstained Chivalry,Pale Flame + Emblem of Severed Fate,Martial Artist,ATK%,Physical DMG Bonus,Crit Rate/DMG,"Energy Recharge, Crit DMG, Crit Rate, ATK%"
 Faruzan,faruzan,Elergy for the End,Skyward Harp,Favonius Warbow,Favonius Warbow,Tenacity of the Millelith,Viridescent Venerer,Noblesse Oblige,none,Energy Recharge/ATK%,Type DMG Bonus,Crit Rate/DMG,"Energy Recharge, Crit Rate, Crit DMG"
 Fischl,fischl,Polar Star,Aqua Simulacra,The Stringless,Slingshot,Golden Troupe,Gilded Dreams,Gladiators Finale + Thundering Fury,Instructor,ATK,Physical DMG Bonus,Crit Rate/DMG,"ATK%, Crit Rate, Crit DMG, Elemental Mastery"
 Freminet,freminet,Song of Broken Pines,Beacon of the Reed Sea,Serpent Spine,Snow Tombed Starsilver,Blizzard Strayer,Blizzard Strayer + Pale Flame,Golden Troupe + Pale Flame,Gambler,ATK%,Physical/Type DMG Bonus,Crit Rate/DMG,"ATK, Crit Rate, Crit DMG, ATK%, Elemental Mastery"
-Furina,furina,(multibuild),,,,,,,,,,,
-Gaming,gaming,(multibuild),,,,,,,,,,,
+Gaming,gaming,,,,,,,,,,,,
 Ganyu,ganyu,The First Great Magic,Astral Vultures Crimson Plumage,Amos Bow,Prototype Crescent,Blizzard Strayer,Marechaussee Hunter,Shimenawas Reminiscence,Martial Artist,ATK%,Type DMG Bonus,Crit Rate/DMG,"Crit Rate, Crit DMG, ATK%, Energy Recharge"
 Gorou,gorou,Elergy for the End,Favonius Warbow,Sacrificial Bow,Favonius Warbow,Husk of Opulent Dreams,Emblem of Severed Fate,Noblesse Oblige,The Exile,DEF%/Energy Recharge,DEF%,DEF%/Crit Rate,"DEF%, Energy Recharge, Crit Rate"
 Heizou,heizou,Tulaytullahs Remembrance,Lost Prayer to the Sacred Winds,Solar Pearl,Flowing Purity,Viridescent Venerer,Viridescent Venerer + Gladiators Finale,Noblesse Oblige,Instructor,Elemental Mastery,Elemental Mastery,Elemental Mastery,"Elemental Mastery, ATK%, Crit Rate, Crit DMG"
@@ -53,12 +47,10 @@ Klee,klee,Lost Prayer of the Sacred Winds,Tome of the Eternal Flow,The Widsith,F
 Kokomi,kokomi,Thrilling Tales of Dragon Slayers,Everlasting Moonglow,Prototype Amber,Thrilling Tales of Dragon Slayers,Tenacity of the Millelith,Ocean Hued Clam,Heart of Depth,Instructor,Energy Recharge/HP%,HP%,Healing Bonus,"HP%, Energy Recharge, Elemental Mastery"
 Kujou Sara,kujou,Elergy for the End,Skyward Harp,Mouuns Moon,Fading Twilight,Emblem of Severed Fate,Noblesse Oblige,Thundering Fury + Emblem of Severed Fate,The Exile,ATK%/Energy Recharge,Type DMG Bonus,Crit Rate/DMG,"Energy Recharge, Crit Rate, Crit DMG, ATK%"
 Kuki Shinobu,kuki,Freedom Sworn ,Key of Khaj Nisut,Xiphos Moonlight,Iron Sting,Flower of Paradise Lost,Gilded Dreams,Tenacity of the Millelith,The Exile,HP%,HP%/Type DMG Bonus,Healing Bonus/HP%,"Energy Recharge, HP%, Elemental Mastery"
-Lan Yan,lanyan,(multibuild),,,,,,,,,,,
 Layla,layla,Key of Khaj Nisut,Primordial Jade Cutter,Favonius Sword,Fleuve Cendre Ferryman,Tenacity of the Millelith,Blizzard Strayer,Emblem of Severed Fate,none,HP%,Type DMG Bonus,Crit Rate/DMG,"Crit Rate, Crit DMG, Energy Recharge, HP%"
 Lisa,lisa,Kaguras Verity,Skyward Atlas,The Widsith,Hakushin Ring,Emblem of Severed Fate,Gilded Dreams,Noblesse Oblige,The Exile,Energy Recharge,Type DMG Bonus,Crit Rate/DMG,"Energy Recharge, ATK%, Crit Rate, Crit DMG"
 Lynette,lynette,Freedom Sworn ,Primordial Jade Cutter,Wolf Fang,Iron Sting,Viridescent Venerer,Noblesse Oblige,Emblem of Severed Fate,Gambler,Energy Recharge/Elemental Mastery,Type DMG Bonus/Elemental Mastery,Crit Rate/DMG/Elemental Mastery,"Elemental Mastery, Energy Recharge, Crit Rate, Crit DMG, ATK%, HP%"
 Lyney,lyney,The First Great Magic,Aqua Simulacra,Scion of the Blazing Sun,Song of Stillness,Marechaussee Hunter,Vermillion Hereafter,Crimson Witch of Flames,Martial Artist,ATK,Type DMG Bonus,Crit Rate/DMG,"Energy Recharge, Crit Rate, Crit DMG, ATK%"
-Mavuika,mavuika,(multibuild),,,,,,,,,,,
 Mika,mika,Favonius Lance,Dialogues of the Desert Sages,Rightful Reward,Black Tassel,Noblesse Oblige,Ocean Hued Clam,none,The Exile,Energy Recharge%/HP%,HP%,HP%/Healing Bonus/Crit Rate,"Energy Recharge, HP%"
 Mona,mona,The Widsith,Skyward Atlas,Thrilling Tales of Dragon Slayers,Mappa Mare,Emblem of Severed Fate,Noblesse Oblige,Heart of Depth + Noblesse Oblige,The Exile,Energy Recharge,ATK%,Crit Rate/DMG,"Energy Recharge, Crit Rate, Crit DMG, ATK%"
 Mualani,mualani,Surfs Up,Sacrificial Jade,Ring of Yaxche,Ash Graven Drinking Horn,Obsidian Codex,Heart of Depth,Vourukashas Glow + Nymphs Dream,Martial Artist,HP%/Elemental Mastery,Type DMG Bonus/HP%,Crit DMG,"Crit DMG, HP%, Elemental Mastery, Crit Rate, Energy Recharge"

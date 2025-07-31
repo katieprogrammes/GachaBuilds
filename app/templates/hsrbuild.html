@@ -18,73 +18,67 @@
 <br>
 <div class="row game8data">
   <h2>Game8</h2>
-  <div class="row">
-    <h3>Lightcones</h3>
-    <table class="lcdata">
-      <thead>
-        <tr>
-          <th>Best Option</th>
-          <th>Second Best</th>
-          <th>Third Best</th>
-          <th>Fourth Best</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          {% if game8.lightcone0 == "Signature" %}
-          <td style="color:red;">{{game8.lightcone0}}</td>
-          {%else%}
-          <td>{{game8.lightcone0}}</td>
-          {%endif%}
-          <td>{{game8.lightcone1}}</td>
-          <td>{{game8.lightcone2}}</td>
-          <td>{{game8.lightcone3}}</td>
-        </tr>
-      </tbody>
-
-
-    </table>
+  <div class="row lightcones">
+  <br>
+  <h3>Light Cones</h3>
+  <div class="col lcinfo">
+    <h4>Best Light Cone</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Light Cones/' + game8.lightcone0 + '.png') }}", width="250px">
+    <h5>{{game8.lightcone0}}</h5>
   </div>
+  <div class="col lcinfo">
+    <h4>Second Best Light Cone</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Light Cones/' + game8.lightcone1 + '.png') }}", width="250px">
+    <h5>{{game8.lightcone1}}</h5>
+  </div>
+  <div class="col lcinfo">
+    <h4>Third Best Light Cone</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Light Cones/' + game8.lightcone2 + '.png') }}", width="250px">
+    <h5>{{game8.lightcone2}}</h5>
+  </div>
+  <div class="col lcinfo">
+    <h4>Fourth Best Light Cone</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Light Cones/' + game8.lightcone3 + '.png') }}", width="250px">
+    <h5>{{game8.lightcone3}}</h5>
+  </div>
+</div>
   <br>
   <div class="row relicblock">
     <h3>Relics</h3>
-    <table class="relicdata">
-      <thead>
-        <tr>
-          <th>Best Option</th>
-          <th>Second Best</th>
-          <th>Third Best</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{game8.relic0}}</td>
-          <td>{{game8.relic1}}</td>
-          <td>{{game8.relic2}}</td>
-        </tr>
-      </tbody>
-
-
-    </table>
+    <br>
+  <div class="col relicinfo">
+    <h4>Best Relic Set</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Relics/' + game8.relic0 + '.png') }}", width="250px">
+    <h5>{{game8.relic0}}</h5>
+  </div>
+  <div class="col relicinfo">
+    <h4>Second Best Relic Set</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Relics/' + game8.relic1 + '.png') }}", width="250px">
+    <h5>{{game8.relic1}}</h5>
+  </div>
+  <div class="col relicinfo">
+    <h4>Third Best Relic Set</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Relics/' + game8.relic2 + '.png') }}", width="250px">
+    <h5>{{game8.relic2}}</h5>
+  </div>
   </div>
   <div class="row ornamentblock">
-    <h3>Ornaments</h3>
-    <table class="ornamentdata">
-      <thead>
-        <tr>
-          <th>Best Option</th>
-          <th>Second Best</th>
-          <th>Third Best</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{game8.ornament0}}</td>
-          <td>{{game8.ornament1}}</td>
-          <td>{{game8.ornament2}}</td>
-        </tr>
-      </tbody>
-    </table>
+    <br>
+  <div class="col ornamentinfo">
+    <h4>Best Ornament Set</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Ornaments/' + game8.ornament0 + '.png') }}", width="250px">
+    <h5>{{game8.ornament0}}</h5>
+  </div>
+  <div class="col ornamentinfo">
+    <h4>Second Best Ornament Set</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Ornaments/' + game8.ornament1 + '.png') }}", width="250px">
+    <h5>{{game8.ornament1}}</h5>
+  </div>
+  <div class="col ornamentinfo">
+    <h4>Third Best Ornament Set</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Ornaments/' + game8.ornament2 + '.png') }}", width="250px">
+    <h5>{{game8.ornament2}}</h5>
+  </div>
   </div>
   <div class="row statblock">
     <h3>Relic Stats</h3>

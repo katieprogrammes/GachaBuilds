@@ -57,9 +57,8 @@ header {
 .lcdata {
     width: 100%;
 }
-.lcdata thead {
+.lcinfo h4 {
     background-color: #282566;
-    font-size: 25px;
 }
 .lcdata td {
     font-size: 18px;
