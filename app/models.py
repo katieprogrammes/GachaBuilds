@@ -33,3 +33,20 @@ class HSRGame8(db.Model):
     ropestat: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
     substats: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
     
+
+class GenshinGame8(db.Model):
+    id: so.Mapped[int] = so.mapped_column(primary_key=True)
+    name: so.Mapped[str] = so.mapped_column(sa.String(64), nullable=False)
+    slug: so.Mapped[Optional[str]] = so.mapped_column(sa.String(64), unique=True, nullable=True)
+    weapon0: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    weapon1: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    weapon2: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    weapon3: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    artifact0: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    artifact1: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    artifact2: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    artifact3: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    sandsstat: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    gobletstat: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    circletstat: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    substats: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)

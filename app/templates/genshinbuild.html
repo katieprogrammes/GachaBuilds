@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h1 class="charaname">{{character.name}}</h1>
+<div class="buildimg">
+    <h2>Fort of Fans</h2>
+    {% if fort_image %}
+  <img src="{{ url_for('static', filename=fort_image) }}" width="100%">
+    {% else %}
+    <p>No Fort image found.</p>
+    {% endif %}
+</div>
+<br>
+<div class="buildimg">
+    <h2>Sipsip</h2>
+    <img src="{{ url_for('static', filename='images/Genshin/Characters/' + character.slug + '/sipsip.png') }}", width="100%">
+</div>
+<br>
+<div class="row weapons">
+  <h2>Game 8</h2>
+  <br>
+  <h3>Weapons</h3>
+  <div class="col weaponinfo">
+    <h4>Best Weapon</h4>
+    <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8.weapon0 + '.png') }}", width="250px">
+    <h5>{{game8.weapon0}}</h5>
+  </div>
+  <div class="col">
+    <h4>Second Best Weapon</h4>
+    <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8.weapon1 + '.png') }}", width="250px">
+    <h5>{{game8.weapon1}}</h5>
+  </div>
+  <div class="col">
+    <h4>Third Best Weapon</h4>
+    <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8.weapon2 + '.png') }}", width="250px">
+    <h5>{{game8.weapon2}}</h5>
+  </div>
+  <div class="col">
+    <h4>F2P Weapon</h4>
+    <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8.weapon3 + '.png') }}", width="250px">
+    <h5>{{game8.weapon3}}</h5>
+  </div>
+</div>
+{% endblock %}
