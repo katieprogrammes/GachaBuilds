@@ -57,6 +57,9 @@ header {
 .lcdata {
     width: 100%;
 }
+.lcinfo {
+    text-align: center;
+}
 .lcinfo h4 {
     background-color: #282566;
 }
@@ -68,6 +71,7 @@ header {
 .ornamentblock {
     padding-top: 40px;
 }
+
 .ornamentblock,
 .statblock {
     padding-bottom: 40px;

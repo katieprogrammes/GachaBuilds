@@ -1,4 +1,3 @@
-# app/__init__.py
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -14,8 +13,13 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
 
-    from app.models import Character  # Make sure models are imported inside create_app
+    from app.models import Character
     from app.routes import bp as routes_bp
     app.register_blueprint(routes_bp)
 
     return app
+
+
+if __name__ == "__main__":
+    app = create_app()
+    app.run(debug=True)

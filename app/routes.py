@@ -1,6 +1,6 @@
 import os
 from flask import render_template, Blueprint, url_for, current_app
-from app.models import Character, HSRGame8, GenshinGame8
+from app.models import Character, HSRGame8, HSRGame8multi, GenshinGame8
 
 #Routes
 bp = Blueprint("routes", __name__)
@@ -32,8 +32,13 @@ def character_detail(slug):
         if os.path.exists(potential_path):
             fort_filename = f"images/HSR/Characters/{character.slug}/fort{ext}"
             break
-    game8 = HSRGame8.query.filter_by(slug=slug).first_or_404()
-    return render_template("hsrbuild.html", character=character, title=character.name, fort_image=fort_filename, game8=game8)
+    game8 = HSRGame8.query.filter_by(slug=slug).first()
+    game8multi = HSRGame8multi.query.filter_by(slug=slug).first()
+
+    if not game8 and not game8multi:
+        return render_template("404.html"), 404
+    
+    return render_template("hsrbuild.html", character=character, title=character.name, fort_image=fort_filename, game8=game8, game8multi=game8multi)
 
 @bp.route("/genshin/character/<slug>")
 def gencharacter_detail(slug):

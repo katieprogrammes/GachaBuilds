@@ -18,6 +18,185 @@
 <br>
 <div class="row game8data">
   <h2>Game8</h2>
+  {% if character.slug == game8multi.slug %}
+  <h2><strong>{{game8multi.build1name}}</strong></h2>
+  <div class="row lightcones">
+  <br>
+  <h3>Light Cones</h3>
+  <div class="col lcinfo">
+    <h4>Best Light Cone</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Light Cones/' + game8multi.lightcone0a + '.png') }}", width="250px">
+    <h5>{{game8multi.lightcone0a}}</h5>
+  </div>
+  <div class="col lcinfo">
+    <h4>Second Best Light Cone</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Light Cones/' + game8multi.lightcone1a + '.png') }}", width="250px">
+    <h5>{{game8multi.lightcone1a}}</h5>
+  </div>
+  <div class="col lcinfo">
+    <h4>Third Best Light Cone</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Light Cones/' + game8multi.lightcone2a + '.png') }}", width="250px">
+    <h5>{{game8multi.lightcone2a}}</h5>
+  </div>
+  <div class="col lcinfo">
+    <h4>Fourth Best Light Cone</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Light Cones/' + game8multi.lightcone3a + '.png') }}", width="250px">
+    <h5>{{game8.lightcone3a}}</h5>
+  </div>
+</div>
+  <br>
+  <div class="row relicblock">
+    <h3>Relics</h3>
+    <br>
+  <div class="col relicinfo">
+    <h4>Best Relic Set</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Relics/' + game8multi.relic0a + '.png') }}", width="250px">
+    <h5>{{game8multi.relic0a}}</h5>
+  </div>
+  <div class="col relicinfo">
+    <h4>Second Best Relic Set</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Relics/' + game8multi.relic1a + '.png') }}", width="250px">
+    <h5>{{game8multi.relic1a}}</h5>
+  </div>
+  <div class="col relicinfo">
+    <h4>Third Best Relic Set</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Relics/' + game8multi.relic2a + '.png') }}", width="250px">
+    <h5>{{game8multi.relic2a}}</h5>
+  </div>
+  </div>
+  <div class="row ornamentblock">
+    <br>
+  <div class="col ornamentinfo">
+    <h4>Best Ornament Set</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Ornaments/' + game8multi.ornament0a + '.png') }}", width="250px">
+    <h5>{{game8multi.ornament0a}}</h5>
+  </div>
+  <div class="col ornamentinfo">
+    <h4>Second Best Ornament Set</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Ornaments/' + game8multi.ornament1a + '.png') }}", width="250px">
+    <h5>{{game8multi.ornament1a}}</h5>
+  </div>
+  <div class="col ornamentinfo">
+    <h4>Third Best Ornament Set</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Ornaments/' + game8multi.ornament2a + '.png') }}", width="250px">
+    <h5>{{game8multi.ornament2a}}</h5>
+  </div>
+  </div>
+  <div class="row statblock">
+    <h3>Relic Stats</h3>
+    <table class="relicstats">
+      <thead>
+        <tr>
+          <th>Body</th>
+          <th>Feet</th>
+          <th>Sphere</th>
+          <th>Rope</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{game8multi.bodystata}}</td>
+          <td>{{game8multi.feetstata}}</td>
+          <td>{{game8multi.spherestata}}</td>
+          <td>{{game8multi.ropestata}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row substats">
+    <h2>Substats</h2>
+    <h3>{{game8multi.substatsa}}</h3>
+  </div>
+  <br>
+  <h2><strong>{{game8multi.build2name}}</strong></h2>
+  <div class="row lightcones">
+  <br>
+  <h3>Light Cones</h3>
+  <div class="col lcinfo">
+    <h4>Best Light Cone</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Light Cones/' + game8multi.lightcone0b + '.png') }}", width="250px">
+    <h5>{{game8multi.lightcone0b}}</h5>
+  </div>
+  <div class="col lcinfo">
+    <h4>Second Best Light Cone</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Light Cones/' + game8multi.lightcone1b + '.png') }}", width="250px">
+    <h5>{{game8multi.lightcone1b}}</h5>
+  </div>
+  <div class="col lcinfo">
+    <h4>Third Best Light Cone</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Light Cones/' + game8multi.lightcone2b + '.png') }}", width="250px">
+    <h5>{{game8multi.lightcone2b}}</h5>
+  </div>
+  <div class="col lcinfo">
+    <h4>Fourth Best Light Cone</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Light Cones/' + game8multi.lightcone3b + '.png') }}", width="250px">
+    <h5>{{game8multi.lightcone3b}}</h5>
+  </div>
+</div>
+  <br>
+  <div class="row relicblock">
+    <h3>Relics</h3>
+    <br>
+  <div class="col relicinfo">
+    <h4>Best Relic Set</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Relics/' + game8multi.relic0b + '.png') }}", width="250px">
+    <h5>{{game8multi.relic0b}}</h5>
+  </div>
+  <div class="col relicinfo">
+    <h4>Second Best Relic Set</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Relics/' + game8multi.relic1b + '.png') }}", width="250px">
+    <h5>{{game8multi.relic1b}}</h5>
+  </div>
+  <div class="col relicinfo">
+    <h4>Third Best Relic Set</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Relics/' + game8multi.relic2b + '.png') }}", width="250px">
+    <h5>{{game8multi.relic2b}}</h5>
+  </div>
+  </div>
+  <div class="row ornamentblock">
+    <br>
+  <div class="col ornamentinfo">
+    <h4>Best Ornament Set</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Ornaments/' + game8multi.ornament0b + '.png') }}", width="250px">
+    <h5>{{game8multi.ornament0b}}</h5>
+  </div>
+  <div class="col ornamentinfo">
+    <h4>Second Best Ornament Set</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Ornaments/' + game8multi.ornament1b + '.png') }}", width="250px">
+    <h5>{{game8multi.ornament1b}}</h5>
+  </div>
+  <div class="col ornamentinfo">
+    <h4>Third Best Ornament Set</h4>
+    <img src="{{ url_for('static', filename='images/HSR/Ornaments/' + game8multi.ornament2b + '.png') }}", width="250px">
+    <h5>{{game8multi.ornament2b}}</h5>
+  </div>
+  </div>
+  <div class="row statblock">
+    <h3>Relic Stats</h3>
+    <table class="relicstats">
+      <thead>
+        <tr>
+          <th>Body</th>
+          <th>Feet</th>
+          <th>Sphere</th>
+          <th>Rope</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{game8multi.bodystatb}}</td>
+          <td>{{game8multi.feetstatb}}</td>
+          <td>{{game8multi.spherestatb}}</td>
+          <td>{{game8multi.ropestatb}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row substats">
+    <h2>Substats</h2>
+    <h3>{{game8multi.substatsb}}</h3>
+  </div>
+  {% else %}
   <div class="row lightcones">
   <br>
   <h3>Light Cones</h3>
@@ -106,4 +285,5 @@
     <h3>{{game8.substats}}</h3>
   </div>
 </div>
+{% endif %}
 {% endblock %}
