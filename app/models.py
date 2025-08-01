@@ -163,3 +163,24 @@ class Genshin8Multix3(db.Model):
     gobletstatc: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
     circletstatc: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
     substatsc: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+
+
+class WuwaGame8(db.Model):
+    id: so.Mapped[int] = so.mapped_column(primary_key=True)
+    name: so.Mapped[str] = so.mapped_column(sa.String(64), nullable=False)
+    slug: so.Mapped[Optional[str]] = so.mapped_column(sa.String(64), unique=True, nullable=True)
+    weapon0: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    weapon1: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    weapon2: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    weapon3: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    echo0: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    echo1: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    echo2: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    sonata0: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    sonata1: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    sonata2: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    mainstat4: so.Mapped[str] = so.mapped_column(sa.String(64), nullable=True)
+    mainstat3: so.Mapped[str] = so.mapped_column(sa.String(64), nullable=True)
+    mainstat1: so.Mapped[str] = so.mapped_column(sa.String(64), nullable=True)
+    substats: so.Mapped[str] = so.mapped_column(sa.String(64), nullable=True)
+

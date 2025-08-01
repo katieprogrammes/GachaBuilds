@@ -1,6 +1,6 @@
 import os
 from flask import render_template, Blueprint, url_for, current_app
-from app.models import Character, HSRGame8, HSRGame8multi, GenshinGame8, Genshin8Multi, Genshin8Multix3
+from app.models import Character, HSRGame8, HSRGame8multi, GenshinGame8, Genshin8Multi, Genshin8Multix3, WuwaGame8
 
 #Routes
 bp = Blueprint("routes", __name__)
@@ -20,6 +20,11 @@ def hsr():
 def genshin():
     genshinchars = Character.query.filter_by(game="Genshin").order_by(Character.name.asc()).all()
     return render_template("genshin.html", genshinchars=genshinchars)
+
+@bp.route('/wuwa', methods=["GET"])
+def wuwa():
+    wuwachars = Character.query.filter_by(game="Wuwa").order_by(Character.name.asc()).all()
+    return render_template("wuwa.html", wuwachars=wuwachars)
 
 @bp.route("/hsr/character/<slug>")
 def character_detail(slug):
@@ -58,3 +63,10 @@ def gencharacter_detail(slug):
     if not game8 and not game8multi and not game8multix3:
         return render_template("404.html"), 404
     return render_template("genshinbuild.html", character=character, title=character.name, fort_image=fort_filename, game8=game8, game8multi=game8multi, game8multix3=game8multix3)
+
+@bp.route("/wuwa/character/<slug>")
+def wucharacter_detail(slug):
+    character = Character.query.filter_by(slug=slug).first_or_404()
+    game8 = WuwaGame8.query.filter_by(slug=slug).first()
+    
+    return render_template("hsrbuild.html", character=character, title=character.name, game8=game8)
