@@ -46,18 +46,25 @@ header {
 .game8data {
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+.game8data strong {
+    text-decoration: underline;
 }
 .game8data h2,
 .game8data h3 {
     padding: 10px 5px;
 }
+
 .game8data table {
     padding: 10px 0;
 }
 .lcdata {
     width: 100%;
 }
-.lcinfo {
+.lcinfo,
+.relicinfo,
+.ornamentinfo {
     text-align: center;
 }
 .lcinfo h4 {
@@ -65,27 +72,24 @@ header {
 }
 .lcdata td {
     font-size: 18px;
-    
 }
+.lightcones,
 .relicblock,
 .ornamentblock {
-    padding-top: 40px;
+    padding-top: 70px;
 }
 
 .ornamentblock,
 .statblock {
     padding-bottom: 40px;
 }
-.relicdata thead {
+.relicinfo h4 {
     background-color: #253666;
     font-size: 25px;
+    text-align: center;
 }
-.relicdata td,
-.relicstats td,
-.ornamentdata td {
-    font-size: 20px;
-}
-.ornamentdata thead {
+
+.ornamentinfo h4 {
     background-color: #254666;
     font-size: 25px;
 }
@@ -95,4 +99,5 @@ header {
 }
 .substats {
     text-align: center;
+    padding-bottom: 60px;
 }
