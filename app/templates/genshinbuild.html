@@ -16,9 +16,388 @@
     <img src="{{ url_for('static', filename='images/Genshin/Characters/' + character.slug + '/sipsip.png') }}", width="100%">
 </div>
 <br>
+
 <div class="row game8data">
   <h2>Game 8</h2>
   <br>
+  <!--3x Build -->
+  {% if character.slug == game8multix3.slug %}
+  <h2 class="buildname"><strong>{{game8multix3.build1name}}</strong></h2>
+  <div class="row weapons">
+  <br>
+  <h3>Weapons</h3>
+  <div class="col weaponinfo">
+    <h4>Best Weapon</h4>
+    <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multix3.weapon0a + '.png') }}", width="250px">
+    <h5>{{game8multix3.weapon0a}}</h5>
+  </div>
+  <div class="col weaponinfo">
+    <h4>Second Best Weapon</h4>
+    <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multix3.weapon1a + '.png') }}", width="250px">
+    <h5>{{game8multix3.weapon1a}}</h5>
+  </div>
+  <div class="col weaponinfo">
+    <h4>Third Best Weapon</h4>
+    <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multix3.weapon2a + '.png') }}", width="250px">
+    <h5>{{game8multix3.weapon2a}}</h5>
+  </div>
+  <div class="col weaponinfo">
+    <h4>F2P Weapon</h4>
+    <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multix3.weapon3a + '.png') }}", width="250px">
+    <h5>{{game8multix3.weapon3a}}</h5>
+  </div>
+</div>
+  <br>
+  <div class="row artifactblock">
+    <h3>Artifacts</h3>
+    <br>
+    <div class="col artifactinfo">
+      <h4>Best Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multix3.artifact0a + '.png') }}", width="250px">
+      <h5>{{game8multix3.artifact0a}}</h5>
+    </div>
+    <div class="col artifactinfo">
+      <h4>Second Best Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multix3.artifact1a + '.png') }}", width="250px">
+      <h5>{{game8multix3.artifact1a}}</h5>
+    </div>
+    <div class="col artifactinfo">
+      <h4>Third Best Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multix3.artifact2a + '.png') }}", width="250px">
+      <h5>{{game8multix3.artifact2a}}</h5>
+    </div>
+    <div class="col artifactinfo">
+      <h4>4* Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multix3.artifact3a + '.png') }}", width="250px">
+      <h5>{{game8multix3.artifact3a}}</h5>
+    </div>
+  </div>
+  <div class="row statblock">
+    <h3>Artifact Stats</h3>
+    <table class="artifactstats">
+      <thead>
+        <tr>
+          <th>Sands</th>
+          <th>Goblet</th>
+          <th>Circlet</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{game8multix3.sandsstata}}</td>
+          <td>{{game8multix3.gobletstata}}</td>
+          <td>{{game8multix3.circletstata}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row substats">
+    <h2>Substats</h2>
+    <h3>{{game8multix3.substatsa}}</h3>
+  </div>
+  <br>
+  <h2 class="buildname"><strong>{{game8multix3.build2name}}</strong></h2>
+  <div class="row weapons">
+  <br>
+  <h3>Weapons</h3>
+    <div class="col weaponinfo">
+      <h4>Best Weapon</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multix3.weapon0b + '.png') }}", width="250px">
+      <h5>{{game8multix3.weapon0b}}</h5>
+    </div>
+    <div class="col weaponinfo">
+      <h4>Second Best Weapon</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multix3.weapon1b + '.png') }}", width="250px">
+      <h5>{{game8multix3.weapon1b}}</h5>
+    </div>
+    <div class="col weaponinfo">
+      <h4>Third Best Weapon</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multix3.weapon2b + '.png') }}", width="250px">
+      <h5>{{game8multix3.weapon2b}}</h5>
+    </div>
+    <div class="col weaponinfo">
+      <h4>F2P Weapon</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multix3.weapon3b + '.png') }}", width="250px">
+      <h5>{{game8multix3.weapon3b}}</h5>
+    </div>
+  </div>
+  <br>
+  <div class="row artifactblock">
+    <h3>Artifacts</h3>
+    <br>
+    <div class="col artifactinfo">
+      <h4>Best Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multix3.artifact0b + '.png') }}", width="250px">
+      <h5>{{game8multix3.artifact0b}}</h5>
+    </div>
+    <div class="col artifactinfo">
+      <h4>Second Best Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multix3.artifact1b + '.png') }}", width="250px">
+      <h5>{{game8multix3.artifact1b}}</h5>
+    </div>
+    <div class="col artifactinfo">
+      <h4>Third Best Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multix3.artifact2b + '.png') }}", width="250px">
+      <h5>{{game8multix3.artifact2b}}</h5>
+    </div>
+    <div class="col artifactinfo">
+      <h4>4* Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multix3.artifact3b + '.png') }}", width="250px">
+      <h5>{{game8multix3.artifact3b}}</h5>
+    </div>
+  </div>
+  <div class="row statblock">
+    <h3>Artifact Stats</h3>
+    <table class="artifactstats">
+      <thead>
+        <tr>
+          <th>Sands</th>
+          <th>Goblet</th>
+          <th>Circlet</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{game8multix3.sandsstatb}}</td>
+          <td>{{game8multix3.gobletstatb}}</td>
+          <td>{{game8multix3.circletstatb}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row substats">
+    <h2>Substats</h2>
+    <h3>{{game8multix3.substatsb}}</h3>
+  </div>
+  <br>
+  <h2 class="buildname"><strong>{{game8multix3.build3name}}</strong></h2>
+  <div class="row weapons">
+  <br>
+  <h3>Weapons</h3>
+    <div class="col weaponinfo">
+      <h4>Best Weapon</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multix3.weapon0c + '.png') }}", width="250px">
+      <h5>{{game8multix3.weapon0c}}</h5>
+    </div>
+    <div class="col weaponinfo">
+      <h4>Second Best Weapon</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multix3.weapon1c + '.png') }}", width="250px">
+      <h5>{{game8multix3.weapon1c}}</h5>
+    </div>
+    <div class="col weaponinfo">
+      <h4>Third Best Weapon</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multix3.weapon2c + '.png') }}", width="250px">
+      <h5>{{game8multix3.weapon2c}}</h5>
+    </div>
+    <div class="col weaponinfo">
+      <h4>F2P Weapon</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multix3.weapon3c + '.png') }}", width="250px">
+      <h5>{{game8multix3.weapon3c}}</h5>
+    </div>
+  </div>
+  <br>
+  <div class="row artifactblock">
+    <h3>Artifacts</h3>
+    <br>
+    <div class="col artifactinfo">
+      <h4>Best Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multix3.artifact0c + '.png') }}", width="250px">
+      <h5>{{game8multix3.artifact0c}}</h5>
+    </div>
+    <div class="col artifactinfo">
+      <h4>Second Best Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multix3.artifact1c + '.png') }}", width="250px">
+      <h5>{{game8multix3.artifact1c}}</h5>
+    </div>
+    <div class="col artifactinfo">
+      <h4>Third Best Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multix3.artifact2c + '.png') }}", width="250px">
+      <h5>{{game8multix3.artifact2c}}</h5>
+    </div>
+    <div class="col artifactinfo">
+      <h4>4* Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multix3.artifact3c + '.png') }}", width="250px">
+      <h5>{{game8multix3.artifact3c}}</h5>
+    </div>
+  </div>
+  <div class="row statblock">
+    <h3>Artifact Stats</h3>
+    <table class="artifactstats">
+      <thead>
+        <tr>
+          <th>Sands</th>
+          <th>Goblet</th>
+          <th>Circlet</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{game8multix3.sandsstatc}}</td>
+          <td>{{game8multix3.gobletstatc}}</td>
+          <td>{{game8multix3.circletstatc}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row substats">
+    <h2>Substats</h2>
+    <h3>{{game8multix3.substatsc}}</h3>
+  </div>
+
+
+  <!--Multi Build-->
+  {% elif character.slug == game8multi.slug %}
+  <h2 class="buildname"><strong>{{game8multi.build1name}}</strong></h2>
+  <div class="row weapons">
+  <br>
+  <h3>Weapons</h3>
+  <div class="col weaponinfo">
+    <h4>Best Weapon</h4>
+    <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multi.weapon0a + '.png') }}", width="250px">
+    <h5>{{game8multi.weapon0a}}</h5>
+  </div>
+  <div class="col weaponinfo">
+    <h4>Second Best Weapon</h4>
+    <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multi.weapon1a + '.png') }}", width="250px">
+    <h5>{{game8multi.weapon1a}}</h5>
+  </div>
+  <div class="col weaponinfo">
+    <h4>Third Best Weapon</h4>
+    <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multi.weapon2a + '.png') }}", width="250px">
+    <h5>{{game8multi.weapon2a}}</h5>
+  </div>
+  <div class="col weaponinfo">
+    <h4>F2P Weapon</h4>
+    <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multi.weapon3a + '.png') }}", width="250px">
+    <h5>{{game8multi.weapon3a}}</h5>
+  </div>
+</div>
+  <br>
+  <div class="row artifactblock">
+    <h3>Artifacts</h3>
+    <br>
+    <div class="col artifactinfo">
+      <h4>Best Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multi.artifact0a + '.png') }}", width="250px">
+      <h5>{{game8multi.artifact0a}}</h5>
+    </div>
+    <div class="col artifactinfo">
+      <h4>Second Best Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multi.artifact1a + '.png') }}", width="250px">
+      <h5>{{game8multi.artifact1a}}</h5>
+    </div>
+    <div class="col artifactinfo">
+      <h4>Third Best Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multi.artifact2a + '.png') }}", width="250px">
+      <h5>{{game8multi.artifact2a}}</h5>
+    </div>
+    <div class="col artifactinfo">
+      <h4>4* Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multi.artifact3a + '.png') }}", width="250px">
+      <h5>{{game8multi.artifact3a}}</h5>
+    </div>
+  </div>
+  <div class="row statblock">
+    <h3>Artifact Stats</h3>
+    <table class="artifactstats">
+      <thead>
+        <tr>
+          <th>Sands</th>
+          <th>Goblet</th>
+          <th>Circlet</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{game8multi.sandsstata}}</td>
+          <td>{{game8multi.gobletstata}}</td>
+          <td>{{game8multi.circletstata}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row substats">
+    <h2>Substats</h2>
+    <h3>{{game8multi.substatsa}}</h3>
+  </div>
+  <br>
+  <h2 class="buildname"><strong>{{game8multi.build2name}}</strong></h2>
+  <div class="row weapons">
+  <br>
+  <h3>Weapons</h3>
+    <div class="col weaponinfo">
+      <h4>Best Weapon</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multi.weapon0b + '.png') }}", width="250px">
+      <h5>{{game8multi.weapon0b}}</h5>
+    </div>
+    <div class="col weaponinfo">
+      <h4>Second Best Weapon</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multi.weapon1b + '.png') }}", width="250px">
+      <h5>{{game8multi.weapon1b}}</h5>
+    </div>
+    <div class="col weaponinfo">
+      <h4>Third Best Weapon</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multi.weapon2b + '.png') }}", width="250px">
+      <h5>{{game8multi.weapon2b}}</h5>
+    </div>
+    <div class="col weaponinfo">
+      <h4>F2P Weapon</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8multi.weapon3b + '.png') }}", width="250px">
+      <h5>{{game8multi.weapon3b}}</h5>
+    </div>
+  </div>
+  <br>
+  <div class="row artifactblock">
+    <h3>Artifacts</h3>
+    <br>
+    <div class="col artifactinfo">
+      <h4>Best Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multi.artifact0b + '.png') }}", width="250px">
+      <h5>{{game8multi.artifact0b}}</h5>
+    </div>
+    <div class="col artifactinfo">
+      <h4>Second Best Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multi.artifact1b + '.png') }}", width="250px">
+      <h5>{{game8multi.artifact1b}}</h5>
+    </div>
+    <div class="col artifactinfo">
+      <h4>Third Best Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multi.artifact2b + '.png') }}", width="250px">
+      <h5>{{game8multi.artifact2b}}</h5>
+    </div>
+    <div class="col artifactinfo">
+      <h4>4* Artifact Set</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8multi.artifact3b + '.png') }}", width="250px">
+      <h5>{{game8multi.artifact3b}}</h5>
+    </div>
+  </div>
+  <div class="row statblock">
+    <h3>Artifact Stats</h3>
+    <table class="artifactstats">
+      <thead>
+        <tr>
+          <th>Sands</th>
+          <th>Goblet</th>
+          <th>Circlet</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{game8multi.sandsstatb}}</td>
+          <td>{{game8multi.gobletstatb}}</td>
+          <td>{{game8multi.circletstatb}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row substats">
+    <h2>Substats</h2>
+    <h3>{{game8multi.substatsb}}</h3>
+  </div>
+  
+  {% else %}
+
+  <!--Single Build-->
   <div class="row weapons">
     <h3>Weapons</h3>
     <div class="col weaponinfo">
@@ -41,21 +420,53 @@
       <img src="{{ url_for('static', filename='images/Genshin/Weapons/' + game8.weapon3 + '.png') }}", width="250px">
       <h5>{{game8.weapon3}}</h5>
     </div>
-    <div class="row artifactblock">
-      <h3>Artifacts</h3>
-      <div class="col artifinfo">
-        <h4>Best Artifact</h4>
+  </div>
+  <div class="row artifactblock">
+    <h3>Artifacts</h3>
+    <div class="col artifinfo">
+      <h4>Best Artifact</h4>
       <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8.artifact0 + '.png') }}", width="250px">
       <h5>{{game8.artifact0}}</h5>
-      </div>
-      <div class="col artifinfo">
-        <h4>Best Artifact</h4>
+    </div>
+    <div class="col artifinfo">
+      <h4>Second Best Artifact</h4>
       <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8.artifact1 + '.png') }}", width="250px">
       <h5>{{game8.artifact1}}</h5>
-      </div>
-      <div class="col artifinfo"></div>
-      <div class="col artifinfo"></div>
+    </div>
+    <div class="col artifinfo">
+      <h4>Third Best Artifact</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8.artifact2 + '.png') }}", width="250px">
+      <h5>{{game8.artifact2}}</h5>
+    </div>
+    <div class="col artifinfo">
+      <h4>4* Artifact</h4>
+      <img src="{{ url_for('static', filename='images/Genshin/Artifacts/' + game8.artifact3 + '.png') }}", width="250px">
+      <h5>{{game8.artifact3}}</h5>
     </div>
   </div>
+  <div class="row statblock">
+    <h3>Artifact Stats</h3>
+    <table class="artifactstats">
+      <thead>
+        <tr>
+          <th>Sands</th>
+          <th>Goblet</th>
+          <th>Circlet</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{game8.sandsstat}}</td>
+          <td>{{game8.gobletstat}}</td>
+          <td>{{game8.circletstat}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row substats">
+    <h2>Substats</h2>
+    <h3>{{game8.substats}}</h3>
+  </div>
 </div>
+{% endif %}
 {% endblock %}
