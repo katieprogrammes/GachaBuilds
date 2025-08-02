@@ -179,8 +179,10 @@ class WuwaGame8(db.Model):
     sonata0: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
     sonata1: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
     sonata2: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    echocost: so.Mapped[str] = so.mapped_column(sa.String(32), nullable=True)
     mainstat4: so.Mapped[str] = so.mapped_column(sa.String(64), nullable=True)
     mainstat3: so.Mapped[str] = so.mapped_column(sa.String(64), nullable=True)
     mainstat1: so.Mapped[str] = so.mapped_column(sa.String(64), nullable=True)
-    substats: so.Mapped[str] = so.mapped_column(sa.String(64), nullable=True)
-
+    substats: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    skillpriority: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    

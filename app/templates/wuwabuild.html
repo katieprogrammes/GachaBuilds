@@ -2,4 +2,20 @@
 
 {% block body %}
 <h1 class="charaname">{{character.name}}</h1>
+<br>
+<div class="row buildblock">
+    <div class="col-4 picture">
+        <img src="{{ url_for('static', filename='images/WUWA/Characters/' + game8.slug + '.png') }}">
+    </div>
+    <div class="col wuwainfo">
+        <div class="row wuweaponblock">
+            <div class="col wuweaponinfo">
+                <h3>Best Weapon:</h3>
+                <h4>{{game8.weapon0}}</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 {% endblock %}

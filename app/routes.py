@@ -69,4 +69,4 @@ def wucharacter_detail(slug):
     character = Character.query.filter_by(slug=slug).first_or_404()
     game8 = WuwaGame8.query.filter_by(slug=slug).first()
     
-    return render_template("hsrbuild.html", character=character, title=character.name, game8=game8)
+    return render_template("wuwabuild.html", character=character, title=character.name, game8=game8)
