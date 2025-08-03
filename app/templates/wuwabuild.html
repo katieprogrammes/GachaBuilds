@@ -10,8 +10,24 @@
     <div class="col wuwainfo">
         <div class="row wuweaponblock">
             <div class="col wuweaponinfo">
-                <h3>Best Weapon:</h3>
-                <h4>{{game8.weapon0}}</h4>
+                <h4>Best Weapon:</h4>
+                <img src="{{ url_for('static', filename='images/WUWA/Weapons/' + game8.weapon0 + '.png') }}", width="150px">
+                <h5>{{game8.weapon0}}</h5>
+            </div>
+            <div class="col wuweaponinfo">
+                <h4>2nd Best Weapon:</h4>
+                <img src="{{ url_for('static', filename='images/WUWA/Weapons/' + game8.weapon1 + '.png') }}", width="150px">
+                <h5>{{game8.weapon1}}</h5>
+            </div>
+            <div class="col wuweaponinfo">
+                <h4>3rd Best Weapon:</h4>
+                <img src="{{ url_for('static', filename='images/WUWA/Weapons/' + game8.weapon2 + '.png') }}", width="150px">
+                <h5>{{game8.weapon2}}</h5>
+            </div>
+            <div class="col wuweaponinfo">
+                <h4>F2P Weapon:</h4>
+                <img src="{{ url_for('static', filename='images/WUWA/Weapons/' + game8.weapon3 + '.png') }}", width="150px">
+                <h5>{{game8.weapon3}}</h5>
             </div>
         </div>
     </div>
