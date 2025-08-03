@@ -5,7 +5,7 @@
 <br>
 <div class="row buildblock">
     <div class="col-4 picture">
-        <img src="{{ url_for('static', filename='images/WUWA/Characters/' + game8.slug + '.png') }}">
+        <img src="{{ url_for('static', filename='images/WUWA/Characters/' + game8.name + '.png') }}">
     </div>
     <div class="col wuwainfo">
         <div class="row wuweaponblock">
@@ -30,8 +30,23 @@
                 <h5>{{game8.weapon3}}</h5>
             </div>
         </div>
+        <div class="row echoblock">
+            <div class="col echoinfo">
+                <h4>Best Echo:</h4>
+                <img src="{{ url_for('static', filename='images/WUWA/Echos/' + game8.echo0 + '.png') }}", width="150px">
+                <h5>{{game8.echo0}}</h5>
+            </div>
+            <div class="col echoinfo">
+                <h4>2nd Best Echo:</h4>
+                <img src="{{ url_for('static', filename='images/WUWA/Echos/' + game8.echo1 + '.png') }}", width="150px">
+                <h5>{{game8.echo1}}</h5>
+            </div>
+            <div class="col echoinfo">
+                <h4>3rd Best Echo:</h4>
+                <img src="{{ url_for('static', filename='images/WUWA/Echos/' + game8.echo2 + '.png') }}", width="150px">
+                <h5>{{game8.echo2}}</h5>
+            </div>
+        </div>
     </div>
 </div>
-
-
 {% endblock %}
