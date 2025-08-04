@@ -104,3 +104,8 @@ header {
 .wuweaponblock {
     text-align: center;
 }
+.echoblock,
+.sonatablock {
+    padding-top: 50px;
+    text-align: center;
+}
