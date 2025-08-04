@@ -8,6 +8,10 @@
         <img src="{{ url_for('static', filename='images/WUWA/Characters/' + game8.name + '.png') }}">
     </div>
     <div class="col wuwainfo">
+        {%if game8.weapon0 == "Coming Soon" %}
+        <img src="{{ url_for('static', filename='images/WUWA/' + 'comingsoon' + '.png') }}" width="800px" class="comingsoon">
+        <h3>This character is unreleased</h3>
+        {% else %}
         <div class="row wuweaponblock">
             <div class="col wuweaponinfo">
                 <h4>Best Weapon:</h4>
@@ -92,4 +96,5 @@
         </div>
     </div>
 </div>
+{% endif %}
 {% endblock %}
