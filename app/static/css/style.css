@@ -23,7 +23,15 @@ header {
     font-weight: 400;
     color: #B8C6F4;
 }
-
+/*Text Align*/
+.charaname,
+.lcinfo,
+.relicinfo,
+.ornamentinfo,
+.wuweaponblock,
+.zzzinfo {
+    text-align: center;
+}
 .charcard {
     display: flex;
     justify-content: center;
@@ -40,9 +48,7 @@ header {
     color: white;
 }
 /*Build Page*/
-.charaname {
-    text-align: center;
-}
+
 .game8data {
     display: flex;
     justify-content: center;
@@ -55,17 +61,8 @@ header {
 .game8data h3 {
     padding: 10px 5px;
 }
-
-.game8data table {
-    padding: 10px 0;
-}
 .lcdata {
     width: 100%;
-}
-.lcinfo,
-.relicinfo,
-.ornamentinfo {
-    text-align: center;
 }
 .lcinfo h4 {
     background-color: #282566;
@@ -78,7 +75,6 @@ header {
 .ornamentblock {
     padding-top: 70px;
 }
-
 .ornamentblock,
 .statblock {
     padding-bottom: 40px;
@@ -108,28 +104,38 @@ header {
     padding-left: 30px;
     text-align: center;
 }
-.wuweaponblock {
-    text-align: center;
-}
 .wuwastats {
     padding-top: 40px;
 }
 .echoblock,
 .sonatablock,
 .echocoststat,
-.statskill {
+.statskill,
+.datadiscblock,
+.discstatblock {
     padding-top: 30px;
     text-align: center;
 }
-.echocoststat {
+.echocoststat,
+.discstatinfo6 {
     color: rgb(237, 162, 237);
 }
-.wusubstat {
+.wusubstat,
+.discstatinfo5 {
     color: rgb(149, 149, 240);
 }
-.skillpriority {
+.skillpriority,
+.discstatinfo4 {
     color: rgb(149, 182, 240);
 }
 .skillpriority h5 {
     font-weight: 700;
+}
+.zzzsubstats {
+    padding-top: 40px;
+    text-align: center;
+}
+.datadiscblock {
+    display: flex;
+    align-items: flex-end;
 }

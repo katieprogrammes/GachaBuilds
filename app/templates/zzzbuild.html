@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h1 class="charaname">{{character.name}}</h1>
+<br>
+<div class="row buildblock">
+    <div class="col-3 picture">
+        <img src="{{ url_for('static', filename='images/ZZZ/Characters/' + game8.slug + '.png') }}">
+    </div>
+    <div class="col zzzinfo">
+        <div class="row zzzengineblock">
+            <div class="col zzzengineinfo">
+                <h4>Best W-Engine:</h4>
+                <img src="{{ url_for('static', filename='images/ZZZ/WEngines/' + game8.wengine0 + '.png') }}", width="125px">
+                <h5>{{game8.wengine0}}</h5>
+            </div>
+            <div class="col zzzengineinfo">
+                <h4>2nd Best W-Engine:</h4>
+                <img src="{{ url_for('static', filename='images/ZZZ/WEngines/' + game8.wengine1 + '.png') }}", width="125px">
+                <h5>{{game8.wengine1}}</h5>
+            </div>
+            <div class="col zzzengineinfo">
+                <h4>3rd Best W-Engine:</h4>
+                <img src="{{ url_for('static', filename='images/ZZZ/WEngines/' + game8.wengine2 + '.png') }}", width="125px">
+                <h5>{{game8.wengine2}}</h5>
+            </div>
+            <div class="col zzzengineinfo">
+                <h4>Fourth Best W-Engine:</h4>
+                <img src="{{ url_for('static', filename='images/ZZZ/WEngines/' + game8.wengine3 + '.png') }}", width="125px">
+                <h5>{{game8.wengine3}}</h5>
+            </div>
+        </div>
+        <div class="row datadiscblock">
+            <div class="col datadiscinfo">
+                <h4>Best 4pc Data Disc:</h4>
+                <img src="{{ url_for('static', filename='images/ZZZ/DataDiscs/' + game8.drive4pcdisc0 + '.png') }}", width="125px">
+                <h5>{{game8.drive4pcdisc0}}</h5>
+            </div>
+            <div class="col datadiscinfo">
+                <h4>Best 2pc Data Disc:</h4>
+                <img src="{{ url_for('static', filename='images/ZZZ/DataDiscs/' + game8.drive2pcdisc0 + '.png') }}", width="125px">
+                <h5>{{game8.drive2pcdisc0}}</h5>
+            </div>
+            <div class="col datadiscinfo">
+                <h4>2nd Best 4pc Data Disc:</h4>
+                <img src="{{ url_for('static', filename='images/ZZZ/DataDiscs/' + game8.drive4pcdisc1 + '.png') }}", width="125px">
+                <h5>{{game8.drive4pcdisc1}}</h5>
+            </div>
+            <div class="col datadiscinfo">
+                <h4>2nd Best 2pc Data Disc:</h4>
+                <img src="{{ url_for('static', filename='images/ZZZ/DataDiscs/' + game8.drive2pcdisc1 + '.png') }}", width="125px">
+                <h5>{{game8.drive2pcdisc1}}</h5>
+            </div>
+        </div>
+        <div class="row discstatblock">
+            <div class="col discstatinfo6">
+                <h4>Disc 6 Best Stat:</h4>
+                <h5>{{game8.discstat6}}</h5>
+            </div>
+            <div class="col discstatinfo5">
+                <h4>Disc 5 Best Stat:</h4>
+                <h5>{{game8.discstat5}}</h5>
+            </div>
+            <div class="col discstatinfo4">
+                <h4>Disc 4 Best Stat:</h4>
+                <h5>{{game8.discstat4}}</h5>
+            </div>
+        </div>
+        <div class="row zzzsubstats">
+            <h3>Data Disc Substats</h3>
+            <h4>{{game8.discsubstat}}</h4>
+        </div>
+    </div>
+</div>
+{% endblock %}

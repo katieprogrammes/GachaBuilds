@@ -185,4 +185,20 @@ class WuwaGame8(db.Model):
     mainstat1: so.Mapped[str] = so.mapped_column(sa.String(64), nullable=True)
     substats: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
     skillpriority: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
-    
+
+class ZZZGame8(db.Model):
+    id: so.Mapped[int] = so.mapped_column(primary_key=True)
+    name: so.Mapped[str] = so.mapped_column(sa.String(64), nullable=False)
+    slug: so.Mapped[Optional[str]] = so.mapped_column(sa.String(64), unique=True, nullable=True)
+    wengine0: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    wengine1: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    wengine2: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    wengine3: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    drive4pcdisc0: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    drive2pcdisc0: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    drive4pcdisc1: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    drive2pcdisc1: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    discstat6: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    discstat5: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    discstat4: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
+    discsubstat: so.Mapped[str] = so.mapped_column(sa.String(128), nullable=True)
