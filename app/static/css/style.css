@@ -101,11 +101,22 @@ header {
     text-align: center;
     padding-bottom: 60px;
 }
+.wuwainfo {
+    padding-left: 30px;
+}
 .wuweaponblock {
     text-align: center;
 }
+.wuwastats {
+    padding-top: 40px;
+}
 .echoblock,
-.sonatablock {
-    padding-top: 50px;
+.sonatablock,
+.echocoststat,
+.statskill {
+    padding-top: 30px;
     text-align: center;
+}
+.echocoststat {
+    color: rgb(237, 162, 237);
 }
