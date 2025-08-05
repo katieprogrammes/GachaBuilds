@@ -1,6 +1,6 @@
 import os
 from flask import render_template, Blueprint, url_for, current_app
-from app.models import Character, HSRGame8, HSRGame8multi, GenshinGame8, Genshin8Multi, Genshin8Multix3, WuwaGame8, ZZZGame8
+from app.models import Character, HSRGame8, HSRGame8multi, GenshinGame8, Genshin8Multi, Genshin8Multix3, WuwaGame8, ZZZGame8, WuwaGame8Multi
 
 #Routes
 bp = Blueprint("routes", __name__)
@@ -73,8 +73,9 @@ def gencharacter_detail(slug):
 def wucharacter_detail(slug):
     character = Character.query.filter_by(slug=slug).first_or_404()
     game8 = WuwaGame8.query.filter_by(slug=slug).first()
+    game8multi = WuwaGame8Multi.query.filter_by(slug=slug).first()
     
-    return render_template("wuwabuild.html", character=character, title=character.name, game8=game8)
+    return render_template("wuwabuild.html", character=character, title=character.name, game8=game8, game8multi=game8multi)
 
 @bp.route("/zzz/character/<slug>")
 def zzzcharacter_detail(slug):

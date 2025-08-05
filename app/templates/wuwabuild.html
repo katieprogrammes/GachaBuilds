@@ -11,7 +11,160 @@
         {%if game8.weapon0 == "Coming Soon" %}
         <img src="{{ url_for('static', filename='images/WUWA/' + 'comingsoon' + '.png') }}" width="800px" class="comingsoon">
         <h3>This character is unreleased</h3>
+
+        <!--Multi Build-->
+        {% elif character.slug == game8multi.slug %}
+        <div class="row multiwwblock">
+            <h3>{{game8multi.build1name}}</h3>
+            <div class="col multiweapon">
+                <h5>Best Weapon:</h5>
+                <img src="{{ url_for('static', filename='images/WUWA/Weapons/' + game8multi.weapon0a + '.png') }}", width="115px">
+                <p>{{game8multi.weapon0a}}</p>
+            </div>
+            <div class="col multiweapon">
+                <h5>Best Weapon:</h5>
+                <img src="{{ url_for('static', filename='images/WUWA/Weapons/' + game8multi.weapon1a + '.png') }}", width="115px">
+                <p>{{game8multi.weapon1a}}</p>
+            </div>
+            <div class="col multiweapon">
+                <h5>Best Weapon:</h5>
+                <img src="{{ url_for('static', filename='images/WUWA/Weapons/' + game8multi.weapon2a + '.png') }}", width="115px">
+                <p>{{game8multi.weapon2a}}</p>
+            </div>
+            <div class="col multiweapon">
+                <h5>Best Weapon:</h5>
+                <img src="{{ url_for('static', filename='images/WUWA/Weapons/' + game8multi.weapon3a + '.png') }}", width="115px">
+                <p>{{game8multi.weapon3a}}</p>
+            </div>
+        </div>
+        <div class="row echosonatablock">
+            <div class="col echosonatainfo">
+                <div class="col">
+                    <h4>Best Echo:</h4>
+                    <img src="{{ url_for('static', filename='images/WUWA/Echoes/' + game8multi.echo0a + '.png') }}", width="100px">
+                    <h5>{{game8multi.echo0a}}</h5>
+                </div>
+                <div class="col multiecho">
+                    <h4>2nd Best Echo:</h4>
+                    <img src="{{ url_for('static', filename='images/WUWA/Echoes/' + game8multi.echo1a + '.png') }}", width="100px">
+                    <h5>{{game8multi.echo1a}}</y5>
+                </div>
+            </div>
+            <div class="col echosonatainfo">
+                <div class="col multi sonata">
+                    <h4>Best Sonata:</h4>
+                    <img src="{{ url_for('static', filename='images/WUWA/Sonata/' + game8multi.sonata0a + '.png') }}", width="80px">
+                    <h5>{{game8multi.sonata0a}}</h5>
+                </div>
+                <div class="col">
+                    <h4> 2nd Best Sonata:</h4>
+                    <img src="{{ url_for('static', filename='images/WUWA/Sonata/' + game8multi.sonata1a + '.png') }}", width="80px">
+                    <h5>{{game8multi.sonata1a}}</h5>
+                </div>
+            </div>
+            <div class="row echostat">
+                <div class="col info431">
+                    <div class="col">
+                        <h5>4-cost Echo Stat</h5>
+                        <p>{{game8multi.mainstat4a}}</p>
+                    </div>
+                    <div class="col">
+                        <h5>3-cost Echo Stat</h5>
+                        <p>{{game8multi.mainstat3a}}</p>
+                    </div>
+                    <div class="col">
+                        <h5>1-cost Echo Stat</h5>
+                        <p>{{game8multi.mainstat1a}}</p>
+                    </div>
+                </div>
+                <div class="col-3 echosubstat">
+                    <h5>Echo Substats</h5>
+                    <p>{{game8multi.substatsa}}</p>
+                </div>
+            </div>
+            <div class="row skillpriority">
+               <h4>Skill Priority</h4>
+                <h5>{{game8multi.skillprioritya}}</h5>
+            </div> 
+        </div>
+        <div class="row multiwwblock2">
+            <h3>{{game8multi.build2name}}</h3>
+            <div class="col multiweapon">
+                <h5>Best Weapon:</h5>
+                <img src="{{ url_for('static', filename='images/WUWA/Weapons/' + game8multi.weapon0b + '.png') }}", width="115px">
+                <p>{{game8multi.weapon0b}}</p>
+            </div>
+            <div class="col multiweapon">
+                <h5>Best Weapon:</h5>
+                <img src="{{ url_for('static', filename='images/WUWA/Weapons/' + game8multi.weapon1b + '.png') }}", width="115px">
+                <p>{{game8multi.weapon1b}}</p>
+            </div>
+            <div class="col multiweapon">
+                <h5>Best Weapon:</h5>
+                <img src="{{ url_for('static', filename='images/WUWA/Weapons/' + game8multi.weapon2b + '.png') }}", width="115px">
+                <p>{{game8multi.weapon2b}}</p>
+            </div>
+            <div class="col multiweapon">
+                <h5>Best Weapon:</h5>
+                <img src="{{ url_for('static', filename='images/WUWA/Weapons/' + game8multi.weapon3b + '.png') }}", width="115px">
+                <p>{{game8multi.weapon3b}}</p>
+            </div>
+        </div>
+        <div class="row echosonatablock">
+            <div class="col echosonatainfo">
+                <div class="col">
+                    <h4>Best Echo:</h4>
+                    <img src="{{ url_for('static', filename='images/WUWA/Echoes/' + game8multi.echo0b + '.png') }}", width="100px">
+                    <h5>{{game8multi.echo0b}}</h5>
+                </div>
+                <div class="col multiecho">
+                    <h4>2nd Best Echo:</h4>
+                    <img src="{{ url_for('static', filename='images/WUWA/Echoes/' + game8multi.echo1b + '.png') }}", width="100px">
+                    <h5>{{game8multi.echo1b}}</y5>
+                </div>
+            </div>
+            <div class="col echosonatainfo">
+                <div class="col multi sonata">
+                    <h4>Best Sonata:</h4>
+                    <img src="{{ url_for('static', filename='images/WUWA/Sonata/' + game8multi.sonata0b + '.png') }}", width="80px">
+                    <h5>{{game8multi.sonata0b}}</h5>
+                </div>
+                <div class="col">
+                    <h4> 2nd Best Sonata:</h4>
+                    <img src="{{ url_for('static', filename='images/WUWA/Sonata/' + game8multi.sonata1b + '.png') }}", width="80px">
+                    <h5>{{game8multi.sonata1b}}</h5>
+                </div>
+            </div>
+            <div class="row echostat">
+                <div class="col info431">
+                    <div class="col">
+                        <h5>4-cost Echo Stat</h5>
+                        <p>{{game8multi.mainstat4b}}</p>
+                    </div>
+                    <div class="col">
+                        <h5>3-cost Echo Stat</h5>
+                        <p>{{game8multi.mainstat3b}}</p>
+                    </div>
+                    <div class="col">
+                        <h5>1-cost Echo Stat</h5>
+                        <p>{{game8multi.mainstat1b}}</p>
+                    </div>
+                </div>
+                <div class="col-3 echosubstat">
+                    <h5>Echo Substats</h5>
+                    <p>{{game8multi.substatsb}}</p>
+                </div>
+            </div>
+            <div class="row skillpriority">
+               <h4>Skill Priority</h4>
+                <h5>{{game8multi.skillpriorityb}}</h5>
+            </div> 
+        </div>
         {% else %}
+
+
+
+
         <div class="row wuweaponblock">
             <div class="col wuweaponinfo">
                 <h4>Best Weapon:</h4>
